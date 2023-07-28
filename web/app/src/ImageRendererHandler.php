@@ -38,9 +38,4 @@ class ImageRendererHandler
             file_get_contents($path)
             , 200, ['Content-Type' => 'image/jpg']);
     }
-
-    protected function createException(string $message): \Exception
-    {
-        return new \Exception($message);
-    }
 }
